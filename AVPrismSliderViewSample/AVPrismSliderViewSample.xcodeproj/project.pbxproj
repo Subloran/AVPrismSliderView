@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACA65FBA199D2958003FAD86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA65FB9199D2958003FAD86 /* Foundation.framework */; };
+		ACA65FBC199D2958003FAD86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA65FBB199D2958003FAD86 /* CoreGraphics.framework */; };
+		ACA65FBE199D2958003FAD86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA65FBD199D2958003FAD86 /* UIKit.framework */; };
+		ACA65FC4199D2958003FAD86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACA65FC2199D2958003FAD86 /* InfoPlist.strings */; };
+		ACA65FC6199D2958003FAD86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA65FC5199D2958003FAD86 /* main.m */; };
+		ACA65FCA199D2958003FAD86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA65FC9199D2958003FAD86 /* AppDelegate.m */; };
+		ACA65FCC199D2958003FAD86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA65FCB199D2958003FAD86 /* Images.xcassets */; };
+		ACA65FD3199D2958003FAD86 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA65FD2199D2958003FAD86 /* XCTest.framework */; };
+		ACA65FD4199D2958003FAD86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA65FB9199D2958003FAD86 /* Foundation.framework */; };
+		ACA65FD5199D2958003FAD86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA65FBD199D2958003FAD86 /* UIKit.framework */; };
+		ACA65FDD199D2958003FAD86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACA65FDB199D2958003FAD86 /* InfoPlist.strings */; };
+		ACA65FDF199D2958003FAD86 /* AVPrismSliderViewSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA65FDE199D2958003FAD86 /* AVPrismSliderViewSampleTests.m */; };
+		ACA65FEB199D29C6003FAD86 /* AVPrismSliderViewSampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA65FE9199D29C6003FAD86 /* AVPrismSliderViewSampleVC.m */; };
+		ACA65FEC199D29C6003FAD86 /* AVPrismSliderViewSampleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA65FEA199D29C6003FAD86 /* AVPrismSliderViewSampleVC.xib */; };
+		ACA65FF0199D2A63003FAD86 /* AVPrismSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA65FEF199D2A63003FAD86 /* AVPrismSliderView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACA65FD6199D2958003FAD86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACA65FAE199D2958003FAD86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACA65FB5199D2958003FAD86;
+			remoteInfo = AVPrismSliderViewSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACA65FB6199D2958003FAD86 /* AVPrismSliderViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVPrismSliderViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA65FB9199D2958003FAD86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ACA65FBB199D2958003FAD86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ACA65FBD199D2958003FAD86 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ACA65FC1199D2958003FAD86 /* AVPrismSliderViewSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AVPrismSliderViewSample-Info.plist"; sourceTree = "<group>"; };
+		ACA65FC3199D2958003FAD86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ACA65FC5199D2958003FAD86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ACA65FC7199D2958003FAD86 /* AVPrismSliderViewSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVPrismSliderViewSample-Prefix.pch"; sourceTree = "<group>"; };
+		ACA65FC8199D2958003FAD86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ACA65FC9199D2958003FAD86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ACA65FCB199D2958003FAD86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ACA65FD1199D2958003FAD86 /* AVPrismSliderViewSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVPrismSliderViewSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA65FD2199D2958003FAD86 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ACA65FDA199D2958003FAD86 /* AVPrismSliderViewSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AVPrismSliderViewSampleTests-Info.plist"; sourceTree = "<group>"; };
+		ACA65FDC199D2958003FAD86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ACA65FDE199D2958003FAD86 /* AVPrismSliderViewSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPrismSliderViewSampleTests.m; sourceTree = "<group>"; };
+		ACA65FE8199D29C6003FAD86 /* AVPrismSliderViewSampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPrismSliderViewSampleVC.h; sourceTree = "<group>"; };
+		ACA65FE9199D29C6003FAD86 /* AVPrismSliderViewSampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPrismSliderViewSampleVC.m; sourceTree = "<group>"; };
+		ACA65FEA199D29C6003FAD86 /* AVPrismSliderViewSampleVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVPrismSliderViewSampleVC.xib; sourceTree = "<group>"; };
+		ACA65FEE199D2A63003FAD86 /* AVPrismSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPrismSliderView.h; sourceTree = "<group>"; };
+		ACA65FEF199D2A63003FAD86 /* AVPrismSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPrismSliderView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACA65FB3199D2958003FAD86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA65FBC199D2958003FAD86 /* CoreGraphics.framework in Frameworks */,
+				ACA65FBE199D2958003FAD86 /* UIKit.framework in Frameworks */,
+				ACA65FBA199D2958003FAD86 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA65FCE199D2958003FAD86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA65FD3199D2958003FAD86 /* XCTest.framework in Frameworks */,
+				ACA65FD5199D2958003FAD86 /* UIKit.framework in Frameworks */,
+				ACA65FD4199D2958003FAD86 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACA65FAD199D2958003FAD86 = {
+			isa = PBXGroup;
+			children = (
+				ACA65FED199D2A63003FAD86 /* AVPrismSliderView */,
+				ACA65FBF199D2958003FAD86 /* AVPrismSliderViewSample */,
+				ACA65FD8199D2958003FAD86 /* AVPrismSliderViewSampleTests */,
+				ACA65FB8199D2958003FAD86 /* Frameworks */,
+				ACA65FB7199D2958003FAD86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACA65FB7199D2958003FAD86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACA65FB6199D2958003FAD86 /* AVPrismSliderViewSample.app */,
+				ACA65FD1199D2958003FAD86 /* AVPrismSliderViewSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACA65FB8199D2958003FAD86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACA65FB9199D2958003FAD86 /* Foundation.framework */,
+				ACA65FBB199D2958003FAD86 /* CoreGraphics.framework */,
+				ACA65FBD199D2958003FAD86 /* UIKit.framework */,
+				ACA65FD2199D2958003FAD86 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACA65FBF199D2958003FAD86 /* AVPrismSliderViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				ACA65FE8199D29C6003FAD86 /* AVPrismSliderViewSampleVC.h */,
+				ACA65FE9199D29C6003FAD86 /* AVPrismSliderViewSampleVC.m */,
+				ACA65FEA199D29C6003FAD86 /* AVPrismSliderViewSampleVC.xib */,
+				ACA65FC8199D2958003FAD86 /* AppDelegate.h */,
+				ACA65FC9199D2958003FAD86 /* AppDelegate.m */,
+				ACA65FCB199D2958003FAD86 /* Images.xcassets */,
+				ACA65FC0199D2958003FAD86 /* Supporting Files */,
+			);
+			path = AVPrismSliderViewSample;
+			sourceTree = "<group>";
+		};
+		ACA65FC0199D2958003FAD86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACA65FC1199D2958003FAD86 /* AVPrismSliderViewSample-Info.plist */,
+				ACA65FC2199D2958003FAD86 /* InfoPlist.strings */,
+				ACA65FC5199D2958003FAD86 /* main.m */,
+				ACA65FC7199D2958003FAD86 /* AVPrismSliderViewSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACA65FD8199D2958003FAD86 /* AVPrismSliderViewSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACA65FDE199D2958003FAD86 /* AVPrismSliderViewSampleTests.m */,
+				ACA65FD9199D2958003FAD86 /* Supporting Files */,
+			);
+			path = AVPrismSliderViewSampleTests;
+			sourceTree = "<group>";
+		};
+		ACA65FD9199D2958003FAD86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACA65FDA199D2958003FAD86 /* AVPrismSliderViewSampleTests-Info.plist */,
+				ACA65FDB199D2958003FAD86 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACA65FED199D2A63003FAD86 /* AVPrismSliderView */ = {
+			isa = PBXGroup;
+			children = (
+				ACA65FEE199D2A63003FAD86 /* AVPrismSliderView.h */,
+				ACA65FEF199D2A63003FAD86 /* AVPrismSliderView.m */,
+			);
+			name = AVPrismSliderView;
+			path = AVPrismSliderViewSample/AVPrismSliderView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACA65FB5199D2958003FAD86 /* AVPrismSliderViewSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA65FE2199D2958003FAD86 /* Build configuration list for PBXNativeTarget "AVPrismSliderViewSample" */;
+			buildPhases = (
+				ACA65FB2199D2958003FAD86 /* Sources */,
+				ACA65FB3199D2958003FAD86 /* Frameworks */,
+				ACA65FB4199D2958003FAD86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVPrismSliderViewSample;
+			productName = AVPrismSliderViewSample;
+			productReference = ACA65FB6199D2958003FAD86 /* AVPrismSliderViewSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACA65FD0199D2958003FAD86 /* AVPrismSliderViewSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA65FE5199D2958003FAD86 /* Build configuration list for PBXNativeTarget "AVPrismSliderViewSampleTests" */;
+			buildPhases = (
+				ACA65FCD199D2958003FAD86 /* Sources */,
+				ACA65FCE199D2958003FAD86 /* Frameworks */,
+				ACA65FCF199D2958003FAD86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACA65FD7199D2958003FAD86 /* PBXTargetDependency */,
+			);
+			name = AVPrismSliderViewSampleTests;
+			productName = AVPrismSliderViewSampleTests;
+			productReference = ACA65FD1199D2958003FAD86 /* AVPrismSliderViewSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACA65FAE199D2958003FAD86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					ACA65FD0199D2958003FAD86 = {
+						TestTargetID = ACA65FB5199D2958003FAD86;
+					};
+				};
+			};
+			buildConfigurationList = ACA65FB1199D2958003FAD86 /* Build configuration list for PBXProject "AVPrismSliderViewSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ACA65FAD199D2958003FAD86;
+			productRefGroup = ACA65FB7199D2958003FAD86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACA65FB5199D2958003FAD86 /* AVPrismSliderViewSample */,
+				ACA65FD0199D2958003FAD86 /* AVPrismSliderViewSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACA65FB4199D2958003FAD86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA65FC4199D2958003FAD86 /* InfoPlist.strings in Resources */,
+				ACA65FEC199D29C6003FAD86 /* AVPrismSliderViewSampleVC.xib in Resources */,
+				ACA65FCC199D2958003FAD86 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA65FCF199D2958003FAD86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA65FDD199D2958003FAD86 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACA65FB2199D2958003FAD86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA65FCA199D2958003FAD86 /* AppDelegate.m in Sources */,
+				ACA65FEB199D29C6003FAD86 /* AVPrismSliderViewSampleVC.m in Sources */,
+				ACA65FF0199D2A63003FAD86 /* AVPrismSliderView.m in Sources */,
+				ACA65FC6199D2958003FAD86 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA65FCD199D2958003FAD86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA65FDF199D2958003FAD86 /* AVPrismSliderViewSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACA65FD7199D2958003FAD86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACA65FB5199D2958003FAD86 /* AVPrismSliderViewSample */;
+			targetProxy = ACA65FD6199D2958003FAD86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACA65FC2199D2958003FAD86 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACA65FC3199D2958003FAD86 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ACA65FDB199D2958003FAD86 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACA65FDC199D2958003FAD86 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACA65FE0199D2958003FAD86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACA65FE1199D2958003FAD86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACA65FE3199D2958003FAD86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVPrismSliderViewSample/AVPrismSliderViewSample-Prefix.pch";
+				INFOPLIST_FILE = "AVPrismSliderViewSample/AVPrismSliderViewSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ACA65FE4199D2958003FAD86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVPrismSliderViewSample/AVPrismSliderViewSample-Prefix.pch";
+				INFOPLIST_FILE = "AVPrismSliderViewSample/AVPrismSliderViewSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ACA65FE6199D2958003FAD86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AVPrismSliderViewSample.app/AVPrismSliderViewSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVPrismSliderViewSample/AVPrismSliderViewSample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AVPrismSliderViewSampleTests/AVPrismSliderViewSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ACA65FE7199D2958003FAD86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AVPrismSliderViewSample.app/AVPrismSliderViewSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVPrismSliderViewSample/AVPrismSliderViewSample-Prefix.pch";
+				INFOPLIST_FILE = "AVPrismSliderViewSampleTests/AVPrismSliderViewSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACA65FB1199D2958003FAD86 /* Build configuration list for PBXProject "AVPrismSliderViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA65FE0199D2958003FAD86 /* Debug */,
+				ACA65FE1199D2958003FAD86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA65FE2199D2958003FAD86 /* Build configuration list for PBXNativeTarget "AVPrismSliderViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA65FE3199D2958003FAD86 /* Debug */,
+				ACA65FE4199D2958003FAD86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACA65FE5199D2958003FAD86 /* Build configuration list for PBXNativeTarget "AVPrismSliderViewSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA65FE6199D2958003FAD86 /* Debug */,
+				ACA65FE7199D2958003FAD86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACA65FAE199D2958003FAD86 /* Project object */;
+}
