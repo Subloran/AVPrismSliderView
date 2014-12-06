@@ -61,8 +61,8 @@
     _fieldView.layer.cornerRadius = _fieldView.frame.size.height / 2;
     
     {
-        _sliderViewXConstraint.constant = (_fieldView.frame.size.width / _backgroundButtons.count) * _selectedItem + 1;
-        _sliderViewBottonsContainerXConstraint.constant = -_sliderViewXConstraint.constant + 1;
+        _sliderViewXConstraint.constant = (_fieldView.frame.size.width / _backgroundButtons.count) * _selectedItem + 2;
+        _sliderViewBottonsContainerXConstraint.constant = -_sliderViewXConstraint.constant;
         [_sliderView setNeedsUpdateConstraints];
         [_sliderView layoutIfNeeded];
     }
@@ -202,20 +202,20 @@
 - (IBAction)pan:(UIPanGestureRecognizer *)sender
 {
     CGPoint center = [sender locationInView:sender.view.superview];
-    if (center.x - _sliderView.frame.size.width / 2 <= 0)
+    if (center.x - _sliderView.frame.size.width / 2 <= 2)
     {
         _sliderViewXConstraint.constant = 2;
-        _sliderViewBottonsContainerXConstraint.constant = 0;
+        _sliderViewBottonsContainerXConstraint.constant = -2;
     }
-    else if (center.x + _sliderView.frame.size.width / 2 >= _fieldView.frame.size.width)
+    else if (center.x + _sliderView.frame.size.width / 2 >= _fieldView.frame.size.width - 4)
     {
         _sliderViewXConstraint.constant = _fieldView.frame.size.width - _sliderView.frame.size.width + 2;
-        _sliderViewBottonsContainerXConstraint.constant = -_sliderViewXConstraint.constant + 6;
+        _sliderViewBottonsContainerXConstraint.constant = -_sliderViewXConstraint.constant + 4;
     }
     else
     {
         _sliderViewXConstraint.constant = center.x - _sliderView.frame.size.width / 2 + 2;
-        _sliderViewBottonsContainerXConstraint.constant = -_sliderViewXConstraint.constant + 2;
+        _sliderViewBottonsContainerXConstraint.constant = -_sliderViewXConstraint.constant;
     }
     
     if (sender.state == UIGestureRecognizerStateEnded)
@@ -232,16 +232,16 @@
         {
             CGFloat distance = (_sliderViewXConstraint.constant - button.frame.origin.x + 1 > 0) ? _sliderViewXConstraint.constant - button.frame.origin.x : -(_sliderViewXConstraint.constant - button.frame.origin.x);
             _sliderViewXConstraint.constant = button.frame.origin.x + 2;
-            _sliderViewBottonsContainerXConstraint.constant = -_sliderViewXConstraint.constant + 2;
+            _sliderViewBottonsContainerXConstraint.constant = -_sliderViewXConstraint.constant;
             [_sliderView setNeedsUpdateConstraints];
             [UIView animateWithDuration:0.3 * (distance / (button.frame.size.width / 2)) animations:^{
                 [_sliderView layoutIfNeeded];
+            } completion:^(BOOL finished) {
                 if (self.delegate != nil)
                 {
                     _selectedItem = button.tag;
                     [self.delegate selectionChanged:button.tag inSlider:self];
                 }
-            } completion:^(BOOL finished) {
             }];
             return;
         }
@@ -250,25 +250,25 @@
 
 - (IBAction)buttonPressed:(UIButton*)sender
 {
-    _sliderViewXConstraint.constant = sender.frame.origin.x + 1;
-    _sliderViewBottonsContainerXConstraint.constant = -_sliderViewXConstraint.constant + 1;
+    _sliderViewXConstraint.constant = sender.frame.origin.x + 2;
+    _sliderViewBottonsContainerXConstraint.constant = -_sliderViewXConstraint.constant;
     [self setNeedsUpdateConstraints];
     [UIView animateWithDuration:0.3 animations:^{
         [self layoutIfNeeded];
+    } completion:^(BOOL finished) {
         if (self.delegate != nil)
         {
             _selectedItem = sender.tag;
             [self.delegate selectionChanged:sender.tag inSlider:self];
         }
-    } completion:^(BOOL finished) {
     }];
 }
 
 - (void)selectItem:(NSInteger)item animated:(BOOL)animated
 {
     UIButton* itemToSelect = _backgroundButtons[item];
-    _sliderViewXConstraint.constant = itemToSelect.frame.origin.x + 1;
-    _sliderViewBottonsContainerXConstraint.constant = -_sliderViewXConstraint.constant + 1;
+    _sliderViewXConstraint.constant = itemToSelect.frame.origin.x + 2;
+    _sliderViewBottonsContainerXConstraint.constant = -_sliderViewXConstraint.constant;
     _selectedItem = item;
     [_sliderView setNeedsUpdateConstraints];
     if (animated)
